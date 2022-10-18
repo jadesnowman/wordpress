@@ -32,12 +32,17 @@
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type":"git",
+            "url":"git@github.com:wp-graphql/wp-graphql-jwt-authentication.git"
         }
     ],
     "require": {
         "johnpbloch/wordpress": "^6.0.3",
         "vlucas/phpdotenv": "^5.5",
         "wpackagist-plugin/wp-graphql": "^1.12",
-        "wpackagist-theme/twentyseventeen": "^3"
+        "wpackagist-theme/twentyseventeen": "^3",
+        "wp-graphql/wp-graphql-jwt-authentication": "dev-master"
     }
 }
