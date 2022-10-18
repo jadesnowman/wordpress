@@ -1,0 +1,43 @@
+{
+    "name": "ilham-tia/wordpress-modern",
+    "autoload": {
+        "psr-4": {
+            "IlhamTia\\Wordpress\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ilhamsj",
+            "email": "ilhamsaputrajati@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "wordpress-install-dir": "public/wordpress",
+        "installer-paths": {
+            "public/wp-content/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "public/wp-content/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^6.0.3",
+        "vlucas/phpdotenv": "^5.5",
+        "wpackagist-plugin/wp-graphql": "^1.12",
+        "wpackagist-theme/twentyseventeen": "^3"
+    }
+}
