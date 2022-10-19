@@ -42,7 +42,6 @@
         "johnpbloch/wordpress": "^6.0.3",
         "vlucas/phpdotenv": "^5.5",
         "wpackagist-plugin/wp-graphql": "^1.12",
-        "wpackagist-theme/twentyseventeen": "^3",
         "wp-graphql/wp-graphql-jwt-authentication": "dev-master"
     }
 }
