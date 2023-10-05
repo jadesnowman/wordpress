@@ -1,8 +1,8 @@
 {
-    "name": "ilham-tia/wordpress-modern",
+    "name": "ilhamsj/wordpress-modern",
     "autoload": {
         "psr-4": {
-            "IlhamTia\\Wordpress\\": "src/"
+            "Ilhamsj\\Wordpress\\": "src/"
         }
     },
     "authors": [
@@ -36,6 +36,14 @@
         {
             "type":"git",
             "url":"git@github.com:wp-graphql/wp-graphql-jwt-authentication.git"
+        },
+        {
+            "type":"git",
+            "url":"git@github.com:iam-atomic/twentyseventeen.git"
+        },
+        {
+            "type":"git",
+            "url":"git@github.com:iam-atomic/movie.git"
         }
     ],
     "require": {
@@ -43,6 +51,8 @@
         "vlucas/phpdotenv": "^5.5",
         "wpackagist-plugin/wp-graphql": "^1.12",
         "wpackagist-theme/twentyseventeen": "^3",
-        "wp-graphql/wp-graphql-jwt-authentication": "dev-master"
+        "wp-graphql/wp-graphql-jwt-authentication": "dev-master",
+        "iam-atomic/twentyseventeen": "dev-master",
+        "iam-atomic/movie": "dev-master"
     }
 }

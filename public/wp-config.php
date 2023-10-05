@@ -8,22 +8,22 @@ $dotenv->load();
 /**
  * Database name
  */
-define('DB_NAME', getenv('DATABASE_NAME'));
+define( 'DB_NAME', getenv('DB_NAME') );
 
 /**
  * Database user
  */
-define('DB_USER', "root");
+define( 'DB_USER', getenv( 'DB_USER' ) );
 
 /**
  * Database user password
  */
-define('DB_PASSWORD', "root");
+define( 'DB_PASSWORD', getenv( 'DB_PASSWORD' ) );
 
 /**
  * Database host
  */
-define('DB_HOST', "localhost");
+define( 'DB_HOST', getenv( 'DB_HOST' ) );
 
 /**
  * WordPress DB Charset (is setup this way when the tables are made)
