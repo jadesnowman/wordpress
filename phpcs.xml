@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="MyProject">
+    <!-- Set the default standard -->
+    <defaultStandard>PSR2</defaultStandard>
+
+    <!-- Specify directories or files to be checked -->
+    <file>/</file>
+    <!-- Or use a directory -->
+    <!--<directory>path/to/your/php/files</directory>-->
+
+    <!-- Include paths to be checked -->
+    <!--<include-pattern>path/to/include/*</include-pattern>-->
+
+    <!-- Exclude paths from checking -->
+    <!--<exclude-pattern>path/to/exclude/*</exclude-pattern>-->
+
+    <!-- Define severity levels -->
+    <rule ref="PSR2">
+        <severity>5</severity>
+    </rule>
+
+    <!-- Set error levels for specific rules -->
+    <rule ref="PSR2.Methods.FunctionCallSignature">
+        <severity>10</severity>
+    </rule>
+
+    <!-- Define additional rules or custom sniffs -->
+    <!--<rule ref="MyCustomRules.CustomSniff"/>-->
+
+    <!-- Define report format -->
+    <arg name="report" value="full"/>
+
+    <!-- Set the report file -->
+    <!--<arg name="report-file" value="phpcs_report.txt"/>-->
+
+    <!-- Add custom arguments -->
+    <!--<arg name="colors"/>-->
+    <!--<arg name="cache" value=".phpcs-cache"/>-->
+
+    <!-- Ignore certain files or directories -->
+    <!--<exclude-pattern>path/to/exclude/*</exclude-pattern>-->
+</ruleset>

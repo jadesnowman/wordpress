@@ -13,4 +13,15 @@
 - http://https://blog.sekolah-pilihan.test
 - http://https://blog.sekolah-pilihan.test/wordpress/graphql
 - http://https://blog.sekolah-pilihan.test/wp-json/wp/v2/posts
-m
+
+
+docker run -d \
+--name db-mysql \
+-p 3306:3306 \
+-e MYSQL_ROOT_PASSWORD='root' \
+-e MYSQL_PASSWORD='root' \
+-e MYSQL_DATABASE=wordpress \
+bitnami/mysql:5.7.43
+
+./vendor/bin/phpcs --version
+./vendor/bin/phpcs --standard=PSR1 .
