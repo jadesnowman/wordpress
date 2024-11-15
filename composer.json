@@ -35,25 +35,25 @@
         },
         {
             "type": "git",
-            "url": "git@github.com:wp-graphql/wp-graphql-jwt-authentication.git"
+            "url": "https://github.com/wp-graphql/wp-graphql-jwt-authentication.git"
         },
         {
             "type": "git",
-            "url": "git@github.com:iam-atomic/twentyseventeen.git"
+            "url": "https://github.com/ilhamsj/wordpress-custom-plugin.git"
         },
         {
             "type": "git",
-            "url": "git@github.com:iam-atomic/movie.git"
+            "url": "https://github.com/ilhamsj/wordpress-custom-theme.git"
         }
     ],
     "require": {
         "johnpbloch/wordpress": "*",
-        "vlucas/phpdotenv": "^5.5",
+        "vlucas/phpdotenv": "*",
         "wpackagist-plugin/wp-graphql": "^1.12",
         "wpackagist-theme/twentyseventeen": "^3",
         "wp-graphql/wp-graphql-jwt-authentication": "dev-master",
-        "iam-atomic/twentyseventeen": "dev-master",
-        "iam-atomic/movie": "dev-master"
+        "ilhamsj/wordpress-custom-plugin": "dev-master",
+        "ilhamsj/wordpress-custom-theme": "dev-master"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "3.*"
