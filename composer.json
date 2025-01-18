@@ -50,10 +50,11 @@
         "johnpbloch/wordpress": "*",
         "vlucas/phpdotenv": "*",
         "wpackagist-plugin/wp-graphql": "^1.12",
-        "wpackagist-theme/twentyseventeen": "^3",
         "wp-graphql/wp-graphql-jwt-authentication": "dev-master",
         "ilhamsj/wordpress-custom-plugin": "dev-master",
-        "ilhamsj/wordpress-custom-theme": "dev-master"
+        "ilhamsj/wordpress-custom-theme": "dev-master",
+        "wpackagist-plugin/elementor":"^3",
+        "wpackagist-theme/hello-elementor":"^3"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "3.*"
