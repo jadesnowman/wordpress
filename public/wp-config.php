@@ -43,12 +43,12 @@ define('DB_COLLATE', 'utf8_general_ci');
 /**
  * WordPress home URL (for the front-of-site)
  */
-define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] . '');
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '');
 
 /**
  * WordPress site URL (which is for the admin)
  */
-define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] . '/wordpress');
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress');
 
 /**
  * WordPress content directory
@@ -63,7 +63,7 @@ define('WP_PLUGIN_DIR', dirname(__FILE__) . '/wp-content/plugins');
 /**
  * WordPress content directory url
  */
-define('WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . '/wp-content');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
 
 /**
  * Controls the error reporting. When true, it sets the error reporting level
