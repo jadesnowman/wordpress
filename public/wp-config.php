@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Handles Comment Post to WordPress and prevents duplicate comment posting.
  *
@@ -101,10 +102,14 @@ define('WP_AUTO_UPDATE_CORE', false);
  */
 $table_prefix = 'wp_';
 
+/*
+ * Environment.
+ * https://developer.wordpress.org/apis/wp-config-php/#wp-environment-type
+*/
+define('WP_ENVIRONMENT_TYPE', $_ENV['WP_ENVIRONMENT_TYPE']);
+
 /* Add any custom values between this line and the "stop editing" line. */
 define('GRAPHQL_JWT_AUTH_SECRET_KEY', $_ENV['GRAPHQL_JWT_AUTH_SECRET_KEY']);
-define('GRAPHQL_DEBUG', true);
-
 
 /* That's all, stop editing! Happy publishing. */
 
