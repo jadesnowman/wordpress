@@ -1,5 +1,7 @@
 {
     "name": "ilhamsj/wordpress-modern",
+    "version": "1.0.0",
+    "description": "WordPress with Composer",
     "autoload": {
         "psr-4": {
             "Ilhamsj\\Wordpress\\": "src/"
