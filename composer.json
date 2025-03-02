@@ -1,63 +1,63 @@
 {
-    "name": "ilhamsj/wordpress-modern",
-    "version": "1.0.0",
-    "description": "WordPress with Composer",
-    "autoload": {
-        "psr-4": {
-            "Ilhamsj\\Wordpress\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "ilhamsj",
-            "email": "ilhamsaputrajati@gmail.com"
-        }
-    ],
-    "config": {
-        "allow-plugins": {
-            "johnpbloch/wordpress-core-installer": true,
-            "composer/installers": true
-        }
-    },
-    "extra": {
-        "wordpress-install-dir": "public/wordpress",
-        "installer-paths": {
-            "public/wp-content/plugins/{$name}": [
-                "type:wordpress-plugin"
-            ],
-            "public/wp-content/themes/{$name}": [
-                "type:wordpress-theme"
-            ]
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/wp-graphql/wp-graphql-jwt-authentication.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/ilhamsj/wordpress-custom-plugin.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/ilhamsj/wordpress-custom-theme.git"
-        }
-    ],
-    "require": {
-        "johnpbloch/wordpress": "*",
-        "vlucas/phpdotenv": "*",
-        "wpackagist-plugin/wp-graphql": "^1.12",
-        "wp-graphql/wp-graphql-jwt-authentication": "dev-master",
-        "ilhamsj/wordpress-custom-plugin": "dev-master",
-        "ilhamsj/wordpress-custom-theme": "dev-master",
-        "wpackagist-plugin/google-sitemap-generator": "^4.1"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "3.*"
+  "name": "ilhamsj/wordpress-modern",
+  "version": "1.0.0",
+  "description": "WordPress with Composer",
+  "autoload": {
+    "psr-4": {
+      "Ilhamsj\\Wordpress\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "ilhamsj",
+      "email": "ilhamsaputrajati@gmail.com"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true,
+      "composer/installers": true
+    }
+  },
+  "extra": {
+    "wordpress-install-dir": "public/wordpress",
+    "installer-paths": {
+      "public/wp-content/plugins/{$name}": [
+        "type:wordpress-plugin"
+      ],
+      "public/wp-content/themes/{$name}": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/wp-graphql/wp-graphql-jwt-authentication.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/ilhamsj/wordpress-custom-plugin.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/ilhamsj/wordpress-custom-theme.git"
+    }
+  ],
+  "require": {
+    "johnpbloch/wordpress": "*",
+    "vlucas/phpdotenv": "*",
+    "wpackagist-plugin/wp-graphql": "^1.12",
+    "wp-graphql/wp-graphql-jwt-authentication": "dev-master",
+    "ilhamsj/wordpress-custom-plugin": "dev-dev",
+    "ilhamsj/wordpress-custom-theme": "dev-master",
+    "wpackagist-plugin/google-sitemap-generator": "^4.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  }
 }
