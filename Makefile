@@ -5,8 +5,15 @@ VERSION = 0.0.1-$(ARCH)
 
 .PHONY: build build-nocache tag-latest push push-latest release git-tag-version
 
+export DOCKER_BUILDKIT=1
+
 build:
-	docker build --build-arg GITHUB_PERSONAL_ACCESS_TOKEN=${GITHUB_PERSONAL_ACCESS_TOKEN} -f Dockerfile -t $(NAME):$(VERSION) --platform=linux/$(ARCH) --rm .
+	@echo "Using GitHub Token from ENV"
+	@if [ -z "$$GITHUB_PERSONAL_ACCESS_TOKEN" ]; then echo "Error: GITHUB_PERSONAL_ACCESS_TOKEN is not set" && exit 1; fi
+	@echo "$$GITHUB_PERSONAL_ACCESS_TOKEN" > github_token.txt
+	docker build --secret id=github_token,src=github_token.txt \
+		-f Dockerfile -t $(NAME):$(VERSION) --platform=linux/$(ARCH) --rm .
+	@rm -f github_token.txt
 
 tag-latest:
 	docker tag $(NAME):$(VERSION) $(NAME):$(ARCH)-latest

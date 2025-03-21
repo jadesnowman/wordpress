@@ -283,7 +283,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ilhamsj/wordpress-custom-plugin.git",
-                "reference": "db937325d76eaf50ae67f53d4651e3f5f1123caf"
+                "reference": "075b5476b6982f9e22f2cb35bb0c3783841f97f9"
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "master",
@@ -292,7 +292,9 @@
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
-                    "App\\": "app/"
+                    "App\\": "app/",
+                    "Src\\": "src/",
+                    "Wp\\": "wp/"
                 }
             },
             "license": [
@@ -305,7 +307,7 @@
                 }
             ],
             "description": "Wordpress Plugin Inspiried from movie",
-            "time": "2025-03-02T01:16:03+00:00"
+            "time": "2025-03-02T04:30:12+00:00"
         },
         {
             "name": "ilhamsj/wordpress-custom-theme",
@@ -313,7 +315,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ilhamsj/wordpress-custom-theme.git",
-                "reference": "3abde2a8935374ed24b2bd2d9b6a237a0da6007d"
+                "reference": "5602863be56025e60d415ba485971c5ba00f6a53"
             },
             "default-branch": true,
             "type": "wordpress-theme",
@@ -327,7 +329,7 @@
                 }
             ],
             "description": "Wordpress theme Inspiried from movie",
-            "time": "2025-03-02T01:18:44+00:00"
+            "time": "2025-03-02T16:06:03+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
